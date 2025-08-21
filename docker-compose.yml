@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    container_name: sainsbury_api_container
+    image: sainsbury-dashboard-api:v124
+    # image: sainsbury-dashboard-api:vlocal_build
+    build: .
+    ports:
+      - "8000:80"
+    # volumes:
+    #  - .:/app
